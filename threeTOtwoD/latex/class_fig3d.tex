@@ -1,0 +1,61 @@
+\hypertarget{class_fig3d}{}\section{Fig3d Class Reference}
+\label{class_fig3d}\index{Fig3d@{Fig3d}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_fig3d_acea85aac6739bd0824921deede69590e}{sort\+\_\+vertices}} (\mbox{\hyperlink{class_plane}{Plane}} p)
+\item 
+\mbox{\hyperlink{class_point}{Point}} \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_fig3d_a44d92006b733d19d899496657bca9729}{generate\+\_\+2\+Dpoints}} (double matrix\mbox{[}3\mbox{]}\mbox{[}3\mbox{]})
+\item 
+\mbox{\hyperlink{class_side}{Side}} \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_fig3d_afef51436c82aae83ce95314e3ca36e06}{generate\+\_\+sides}} ()
+\item 
+void \mbox{\hyperlink{class_fig3d_aac9c6733233e2f8c21a50a4c30a2ed20}{create\+\_\+new\+\_\+solid}} (\mbox{\hyperlink{class_plane}{Plane}} p)
+\item 
+void \mbox{\hyperlink{class_fig3d_ac8c3a1dc754f382f22ec2dac6dc16f4f}{hash}} ()
+\item 
+void \mbox{\hyperlink{class_fig3d_aa9265eb5e3c5ba3e57f303005e53d060}{unhash}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fig3d_aac9c6733233e2f8c21a50a4c30a2ed20}\label{class_fig3d_aac9c6733233e2f8c21a50a4c30a2ed20}} 
+\index{Fig3d@{Fig3d}!create\+\_\+new\+\_\+solid@{create\+\_\+new\+\_\+solid}}
+\index{create\+\_\+new\+\_\+solid@{create\+\_\+new\+\_\+solid}!Fig3d@{Fig3d}}
+\subsubsection{\texorpdfstring{create\+\_\+new\+\_\+solid()}{create\_new\_solid()}}
+{\footnotesize\ttfamily void Fig3d\+::create\+\_\+new\+\_\+solid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_plane}{Plane}}}]{p }\end{DoxyParamCaption})}
+
+Will make necessary changes in the solid and new\+\_\+edges in case the plane specified is a cutting plane \mbox{\Hypertarget{class_fig3d_a44d92006b733d19d899496657bca9729}\label{class_fig3d_a44d92006b733d19d899496657bca9729}} 
+\index{Fig3d@{Fig3d}!generate\+\_\+2\+Dpoints@{generate\+\_\+2\+Dpoints}}
+\index{generate\+\_\+2\+Dpoints@{generate\+\_\+2\+Dpoints}!Fig3d@{Fig3d}}
+\subsubsection{\texorpdfstring{generate\+\_\+2\+Dpoints()}{generate\_2Dpoints()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_point}{Point}} \mbox{[}$\,$\mbox{]} Fig3d\+::generate\+\_\+2\+Dpoints (\begin{DoxyParamCaption}\item[{double}]{matrix\mbox{[}3\mbox{]}\mbox{[}3\mbox{]} }\end{DoxyParamCaption})}
+
+Calls vertex\+\_\+to\+\_\+point() for each vertex of the input 3D solid to generate the set of points of the 2D projection \mbox{\Hypertarget{class_fig3d_afef51436c82aae83ce95314e3ca36e06}\label{class_fig3d_afef51436c82aae83ce95314e3ca36e06}} 
+\index{Fig3d@{Fig3d}!generate\+\_\+sides@{generate\+\_\+sides}}
+\index{generate\+\_\+sides@{generate\+\_\+sides}!Fig3d@{Fig3d}}
+\subsubsection{\texorpdfstring{generate\+\_\+sides()}{generate\_sides()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_side}{Side}} \mbox{[}$\,$\mbox{]} Fig3d\+::generate\+\_\+sides (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Will return a list of sides. The information about the side being hidden or not is updated through the data member hidden of the class \mbox{\hyperlink{class_point}{Point}} \mbox{\Hypertarget{class_fig3d_ac8c3a1dc754f382f22ec2dac6dc16f4f}\label{class_fig3d_ac8c3a1dc754f382f22ec2dac6dc16f4f}} 
+\index{Fig3d@{Fig3d}!hash@{hash}}
+\index{hash@{hash}!Fig3d@{Fig3d}}
+\subsubsection{\texorpdfstring{hash()}{hash()}}
+{\footnotesize\ttfamily void Fig3d\+::hash (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+To hash simple cycles formed by new\+\_\+edges \mbox{\Hypertarget{class_fig3d_acea85aac6739bd0824921deede69590e}\label{class_fig3d_acea85aac6739bd0824921deede69590e}} 
+\index{Fig3d@{Fig3d}!sort\+\_\+vertices@{sort\+\_\+vertices}}
+\index{sort\+\_\+vertices@{sort\+\_\+vertices}!Fig3d@{Fig3d}}
+\subsubsection{\texorpdfstring{sort\+\_\+vertices()}{sort\_vertices()}}
+{\footnotesize\ttfamily void Fig3d\+::sort\+\_\+vertices (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_plane}{Plane}}}]{p }\end{DoxyParamCaption})}
+
+Sorts the input solid\textquotesingle{}s vertices in decreasing order of distance from viewer (The point that is nearest to the plane of projection is first) \mbox{\Hypertarget{class_fig3d_aa9265eb5e3c5ba3e57f303005e53d060}\label{class_fig3d_aa9265eb5e3c5ba3e57f303005e53d060}} 
+\index{Fig3d@{Fig3d}!unhash@{unhash}}
+\index{unhash@{unhash}!Fig3d@{Fig3d}}
+\subsubsection{\texorpdfstring{unhash()}{unhash()}}
+{\footnotesize\ttfamily void Fig3d\+::unhash (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+To unhash intersection of hashed portion and holes 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Fig3d.\+c\end{DoxyCompactItemize}
