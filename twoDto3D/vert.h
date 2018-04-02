@@ -1,5 +1,5 @@
 //Vert.h
 class Vert
 {
-	double x, y;
+	double c1, c2;
 }

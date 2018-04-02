@@ -5,6 +5,7 @@
 #include "OpenGL.h"
 class construct3d
 {
+public:
 	Vert3 vposs[1000];
 	Edg3 eposs[100]; // or try eposs[1000][1000]
 	Loop lposs[100];
