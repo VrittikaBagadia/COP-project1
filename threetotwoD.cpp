@@ -61,7 +61,7 @@ class edge
 int main()
 {
 	ifstream infile; 
-   	infile.open("input2.txt");
+   	infile.open("input3to2.txt");
 
 	double cx,cy,cz;
 	infile>>cx>>cy>>cz;
